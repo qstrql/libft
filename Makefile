@@ -6,62 +6,72 @@
 #    By: mjouot <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 16:46:46 by mjouot            #+#    #+#              #
-#    Updated: 2022/10/05 17:23:21 by mjouot           ###   ########.fr        #
+#    Updated: 2022/10/10 11:03:13 by mjouot           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
 
-SRCS = ft_atoi.c \
-	  ft_bzero.c \
-	  ft_calloc.c \
-	  ft_isalnum.c \
-	  ft_isalpha.c \
-	  ft_isascii.c \
-	  ft_isdigit.c \
-	  ft_isprint.c \
-	  ft_memchr.c \
-	  ft_memcmp.c \
-	  ft_memcpy.c \
-	  ft_memmove.c \
-	  ft_memset.c \
-	  ft_putchar_fd.c \
-	  ft_putendl_fd.c \
-	  ft_putnbr_fd.c \
-	  ft_putstr_fd.c \
-	  ft_strdup.c \
-	  ft_strlcat.c \
-	  ft_strnstr.c \
-	  ft_strlcpy.c \
-	  ft_strchr.c \
-	  ft_strrchr.c \
-	  ft_strlen.c \
-	  ft_strncmp.c \
-	  ft_substr.c \
-	  ft_strjoin.c \
-	  ft_strtrim.c \
-	  ft_strmapi.c \
-	  ft_striteri.c \
-	  ft_itoa.c \
-	  ft_split.c \
-	  ft_tolower.c \
-	  ft_toupper.c
+SRCS = \
+	  SRCS/libft/ft_atoi.c \
+	  SRCS/libft/ft_bzero.c \
+	  SRCS/libft/ft_calloc.c \
+	  SRCS/libft/ft_isalnum.c \
+	  SRCS/libft/ft_isalpha.c \
+	  SRCS/libft/ft_isascii.c \
+	  SRCS/libft/ft_isdigit.c \
+	  SRCS/libft/ft_isprint.c \
+	  SRCS/libft/ft_memchr.c \
+	  SRCS/libft/ft_memcmp.c \
+	  SRCS/libft/ft_memcpy.c \
+	  SRCS/libft/ft_memmove.c \
+	  SRCS/libft/ft_memset.c \
+	  SRCS/libft/ft_putchar_fd.c \
+	  SRCS/libft/ft_putendl_fd.c \
+	  SRCS/libft/ft_putnbr_fd.c \
+	  SRCS/libft/ft_putstr_fd.c \
+	  SRCS/libft/ft_strdup.c \
+	  SRCS/libft/ft_strlcat.c \
+	  SRCS/libft/ft_strnstr.c \
+	  SRCS/libft/ft_strlcpy.c \
+	  SRCS/libft/ft_strchr.c \
+	  SRCS/libft/ft_strrchr.c \
+	  SRCS/libft/ft_strlen.c \
+	  SRCS/libft/ft_strncmp.c \
+	  SRCS/libft/ft_substr.c \
+	  SRCS/libft/ft_strjoin.c \
+	  SRCS/libft/ft_strtrim.c \
+	  SRCS/libft/ft_strmapi.c \
+	  SRCS/libft/ft_striteri.c \
+	  SRCS/libft/ft_itoa.c \
+	  SRCS/libft/ft_split.c \
+	  SRCS/libft/ft_tolower.c \
+	  SRCS/libft/ft_toupper.c \
+	  SRCS/bonus/ft_lstnew_bonus.c \
+	  SRCS/bonus/ft_lstadd_front_bonus.c \
+	  SRCS/bonus/ft_lstsize_bonus.c \
+	  SRCS/bonus/ft_lstlast_bonus.c \
+	  SRCS/bonus/ft_lstadd_back_bonus.c \
+	  SRCS/bonus/ft_lstdelone_bonus.c \
+	  SRCS/bonus/ft_lstclear_bonus.c \
+	  SRCS/bonus/ft_lstiter_bonus.c \
+	  SRCS/bonus/ft_lstmap_bonus.c
 
-SRCS_BONUS = ft_lstnew_bonus.c \
-	  		ft_lstadd_front_bonus.c \
-	  		ft_lstsize_bonus.c \
-	  		ft_lstlast_bonus.c \
-	  		ft_lstadd_back_bonus.c \
-		   	ft_lstdelone_bonus.c \
-	  		ft_lstclear_bonus.c \
-	  		ft_lstiter_bonus.c \
-	  		ft_lstmap_bonus.c
+SRCS_EXTRA = \
+		SRCS/printf/ft_printf.c \
+		SRCS/printf/ft_check_str.c \
+		SRCS/printf/ft_printnbr.c \
+		SRCS/printf/ft_printnbr_base.c \
+		SRCS/printf/ft_utilities.c \
+			 \
+		SRCS/extra/ft_super_strjoin.c
+
 CC = gcc
 OBJS = $(SRCS:.c=.o)
-OBJS_BONUS = $(SRCS_BONUS:.c=.o)
-FLAGS = -Wall -Wextra -Werror
+OBJS_EXTRA = $(SRCS_EXTRA:.c=.o)
+FLAGS = -Wall -Wextra -Werror -I ./INCLUDES
 
-ifdef VAR
-	SRCS += $(SRCS_BONUS)
+ifdef VAR_EXTRA
+	SRCS += $(SRCS_EXTRA)
 endif
 
 $(NAME): $(OBJS)
@@ -72,11 +82,11 @@ $(NAME): $(OBJS)
 
 all: $(NAME)
 
-bonus: $(OBJS)
-	@make VAR=true
+extra: $(OBJS)
+	@make VAR_EXTRA=true
 
 clean:
-	rm -f $(OBJS) $(OBJS_BONUS)
+	rm -f $(OBJS) $(OBJS_BONUS) $(OBJS_EXTRA)
 
 fclean: clean
 	rm -f $(NAME)
