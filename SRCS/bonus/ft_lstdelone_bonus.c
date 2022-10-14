@@ -6,11 +6,11 @@
 /*   By: mjouot <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 16:16:51 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/07 10:33:57 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:42:57 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <stdlib.h>
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))

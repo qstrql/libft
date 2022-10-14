@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@marvin.42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 10:58:37 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/07 10:33:49 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:42:11 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <stdlib.h>
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))

@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@marvin.42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 13:26:50 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/07 10:34:30 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:42:34 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

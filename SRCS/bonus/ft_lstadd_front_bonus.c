@@ -6,15 +6,18 @@
 /*   By: mjouot <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 11:24:01 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/07 10:35:35 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:41:59 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <stdlib.h>
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = *lst;
-	*lst = new;
+	if (new != NULL)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
 }

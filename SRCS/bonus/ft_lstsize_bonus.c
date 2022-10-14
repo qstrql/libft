@@ -6,11 +6,11 @@
 /*   By: mjouot <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 11:23:46 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/07 10:35:18 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:40:49 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
