@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 11:43:31 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/06 10:27:52 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:30:41 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 
 int	ft_atoi(const char *nptr)
 {

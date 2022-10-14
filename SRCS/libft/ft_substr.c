@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 18:39:00 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/05 15:22:55 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:38:17 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <stddef.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

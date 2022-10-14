@@ -6,11 +6,12 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 11:41:47 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/05 14:57:34 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:36:30 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
+#include <stddef.h>
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

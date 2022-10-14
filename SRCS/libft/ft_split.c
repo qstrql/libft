@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 18:39:37 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/04 14:15:06 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:32:45 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <stddef.h>
 
 static size_t	ft_get_wordcount(char const *s, char c)

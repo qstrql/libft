@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 18:41:11 by mjouot            #+#    #+#             */
-/*   Updated: 2022/09/28 12:17:02 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:35:29 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)

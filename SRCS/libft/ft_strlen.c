@@ -6,11 +6,12 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 11:40:55 by mjouot            #+#    #+#             */
-/*   Updated: 2022/09/29 12:09:35 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:35:47 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
+#include <stddef.h>
 
 size_t	ft_strlen(const char *str)
 {

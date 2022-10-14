@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 11:43:07 by mjouot            #+#    #+#             */
-/*   Updated: 2022/09/28 15:14:27 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:39:19 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <stddef.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)

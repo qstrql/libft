@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 18:41:00 by mjouot            #+#    #+#             */
-/*   Updated: 2022/09/29 12:13:37 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:36:00 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)

@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 18:40:44 by mjouot            #+#    #+#             */
-/*   Updated: 2022/09/29 12:12:34 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:34:24 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)

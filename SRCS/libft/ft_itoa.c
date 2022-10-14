@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 18:39:50 by mjouot            #+#    #+#             */
-/*   Updated: 2022/09/30 11:40:53 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:37:38 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 
 static int	ft_getlen(int n)
 {

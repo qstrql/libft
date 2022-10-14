@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 11:43:24 by mjouot            #+#    #+#             */
-/*   Updated: 2022/09/28 18:13:55 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:37:06 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 #include <stddef.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)

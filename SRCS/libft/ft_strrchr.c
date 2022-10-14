@@ -6,11 +6,11 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 11:42:48 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/03 14:01:53 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/14 14:32:56 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../INCLUDES/libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
