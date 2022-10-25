@@ -62,8 +62,12 @@ SRCS_EXTRA = \
 		SRCS/printf/ft_printnbr.c \
 		SRCS/printf/ft_printnbr_base.c \
 		SRCS/printf/ft_utilities.c \
-			 \
-		SRCS/extra/ft_super_strjoin.c
+			\
+		SRCS/gnl/get_next_line_utils_bonus.c \
+		SRCS/gnl/get_next_line_bonus.c \
+			\
+		SRCS/extra/ft_super_strjoin.c \
+		SRCS/extra/ft_strndup.c
 
 CC = gcc
 OBJS = $(SRCS:.c=.o)

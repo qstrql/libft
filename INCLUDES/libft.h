@@ -80,5 +80,6 @@ int	ft_printnbr_base(unsigned long n, const char *base, char c);
 
 //extra
 char	*ft_super_strjoin(int size, char **strs, char *sep);
+char	*ft_strndup(char *src, size_t n);
 
 #endif
