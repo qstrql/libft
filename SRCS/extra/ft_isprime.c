@@ -23,6 +23,7 @@ int	ft_isprime(int n)
     {
         if (n % i == 0 || n % (i + 2) == 0)
             return (0);
+	i += 6;
     }
     return (1);
 }

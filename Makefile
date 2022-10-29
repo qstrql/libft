@@ -63,9 +63,6 @@ SRCS_EXTRA = \
 		SRCS/printf/ft_printnbr_base.c \
 		SRCS/printf/ft_utilities.c \
 			\
-		SRCS/gnl/get_next_line_utils_bonus.c \
-		SRCS/gnl/get_next_line_bonus.c \
-			\
 		SRCS/extra/ft_super_strjoin.c \
 		SRCS/extra/ft_strndup.c
 
