@@ -6,7 +6,7 @@
 #    By: mjouot <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 16:46:46 by mjouot            #+#    #+#              #
-#    Updated: 2022/10/30 16:33:09 by mjouot           ###   ########.fr        #
+#    Updated: 2022/10/30 16:51:58 by mjouot           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -66,7 +66,12 @@ SRCS_EXTRA = \
 		SRCS/extra/ft_super_strjoin.c \
 		SRCS/extra/ft_strndup.c \
 		SRCS/extra/ft_isprime.c \
-		SRCS/extra/ft_printf_strs.c
+		SRCS/extra/ft_printf_strs.c \
+		SRCS/extra/ft_abs.c \
+		SRCS/extra/ft_putnbr.c \
+		SRCS/extra/ft_putstr.c \
+		SRCS/extra/ft_putchar.c \
+		SRCS/extra/ft_putendl.c 
 
 CC = gcc
 OBJS = $(SRCS:.c=.o)
