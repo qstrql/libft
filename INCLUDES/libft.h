@@ -6,7 +6,7 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 16:15:51 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/30 16:47:19 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/30 17:09:42 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 # include "ft_printf.h"
 # include <stddef.h>
 # include <stdarg.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 128
+# endif
 
 typedef struct s_list
 {
@@ -73,8 +77,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int	ft_printf(const char *str, ...);
 int	ft_check_str(const char *str, va_list args);
 int	ft_strlen_printf(const char *str);
-int	ft_putchar(const char c);
-int	ft_putstr(const char *s);
+int	ft_putchar_r(const char c);
+int	ft_putstr_r(const char *s);
 int	ft_printnbr(int n, char c);
 int	ft_printnbr_base(unsigned long n, const char *base, char c);
 
@@ -84,9 +88,10 @@ char	*ft_strndup(char *src, size_t n);
 int		ft_isprime(int n);
 void	ft_printf_strs(char **strs);
 int		ft_abs(int n);
-void	ft_putstr(char *s);
+void	ft_putstr(const char *s);
 void	ft_putnbr(int n);
-void	ft_putchar(char c);
+void	ft_putchar(const char c);
 void	ft_putendl(char *s);
+char	*get_next_line(int fd);
 
 #endif

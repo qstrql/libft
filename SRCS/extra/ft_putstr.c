@@ -6,14 +6,14 @@
 /*   By: mjouot <mjouot@marvin.42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 16:45:33 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/30 16:45:49 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/30 17:02:29 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../INCLUDES/libft.h"
 #include <unistd.h>
 
-void	ft_putstr(char *s)
+void	ft_putstr(const char *s)
 {
 	if (s != 0)
 		write(1, s, ft_strlen(s));
