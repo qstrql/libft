@@ -6,7 +6,7 @@
 #    By: mjouot <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 16:46:46 by mjouot            #+#    #+#              #
-#    Updated: 2022/10/30 17:21:32 by mjouot           ###   ########.fr        #
+#    Updated: 2022/10/30 17:28:31 by mjouot           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -74,7 +74,8 @@ SRCS_EXTRA = \
 		SRCS/extra/ft_putendl.c \
 		SRCS/extra/ft_gnl.c \
 		SRCS/extra/ft_intlen.c \
-		SRCS/extra/ft_hexlen.c
+		SRCS/extra/ft_hexlen.c \
+		SRCS/extra/ft_ishexdigit.c
 
 CC = gcc
 OBJS = $(SRCS:.c=.o)
