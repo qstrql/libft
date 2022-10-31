@@ -6,7 +6,7 @@
 /*   By: mjouot <mjouot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 16:15:51 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/30 23:35:32 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/10/31 10:51:22 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ char	*ft_super_strjoin(int size, char **strs, char *sep);
 char	*ft_strndup(char *src, size_t n);
 int		ft_isprime(int n);
 void	ft_printf_strs(char **strs);
-void	ft_printf_tab(int *tab);
+void	ft_printf_tab(int *tab, int len);
 int		ft_abs(int n);
 void	ft_putstr(const char *s);
 void	ft_putnbr(int n);
