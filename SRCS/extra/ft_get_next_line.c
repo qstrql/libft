@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_gnl.c                                           :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mjouot <mjouot@marvin.42.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 16:59:03 by mjouot            #+#    #+#             */
-/*   Updated: 2022/10/30 17:00:56 by mjouot           ###   ########.fr       */
+/*   Updated: 2022/11/08 18:22:41 by mjouot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,45 +24,45 @@ static char	*ft_realloc(char *buf, char *line)
 	return (re_line);
 }
 
-static char	*ft_get_line(char *str)
+static char	*ft_get_line(char *buf)
 {
 	int		i;
 	char	*line;
 
 	i = 0;
-	if (str[0] == '\0')
+	if (buf[0] == '\0')
 		return (NULL);
-	while (str[i] != '\0' && str[i] != '\n')
+	while (buf[i] != '\0' && buf[i] != '\n')
 		i++;
-	if (str[i] == '\n')
+	if (buf[i] == '\n')
 		i += 1;
 	line = ft_calloc(i + 1, sizeof(char));
 	if (line == NULL)
 		return (NULL);
 	i = 0;
-	while (str[i] != '\0' && str[i] != '\n')
+	while (buf[i] != '\0' && buf[i] != '\n')
 	{
-		line[i] = str[i];
+		line[i] = buf[i];
 		i++;
 	}
-	if (str[i] == '\n')
+	if (buf[i] == '\n')
 		line[i] = '\n';
 	return (line);
 }
 
-static char	*ft_get_extra(char *str)
+static char	*ft_get_extra(char *buf)
 {
 	int		i;
 	int		len;
 	char	*extra;
 
-	len = ft_strlen(str);
+	len = ft_strlen(buf);
 	i = 0;
-	while (str[i] != '\0' && str[i] != '\n')
+	while (buf[i] != '\0' && buf[i] != '\n')
 		i++;
-	if (str[i] == '\0')
+	if (buf[i] == '\0')
 	{
-		free(str);
+		free(buf);
 		return (NULL);
 	}
 	extra = ft_calloc((len - i) + 1, sizeof(char));
@@ -70,12 +70,12 @@ static char	*ft_get_extra(char *str)
 	if (extra == NULL)
 		return (NULL);
 	len = 0;
-	while (str[i + len] != '\0')
+	while (buf[i + len] != '\0')
 	{
-		extra[len] = str[i + len];
+		extra[len] = buf[i + len];
 		len++;
 	}
-	free(str);
+	free(buf);
 	return (extra);
 }
 
